@@ -1,0 +1,143 @@
+.card {
+  display: flex;
+  gap: 16px;            /* slightly smaller gap */
+  padding: 16px 20px;   /* reduced vertical padding */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  max-width: 60%;
+  margin: 30px auto;
+  align-items: flex-start;
+  background-color: rgb(23, 41, 19);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.2;     /* tighter line height */
+}
+
+.card-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  margin-top: 60px;
+}
+
+.card-left img {
+  width: 100%;
+  max-width: 320px;    /* smaller image */
+  max-height: 180px;   /* limit image height */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.basic-info {
+  margin-top: 10px;    /* smaller margin */
+  text-align: center;
+}
+
+.basic-info h2 {
+  margin-bottom: 6px;  /* reduced margin */
+  line-height: 1.1;
+}
+
+.basic-info p {
+  margin: 2px 0;       /* smaller vertical margin */
+  line-height: 1.1;
+}
+
+.card-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;           /* smaller gap */
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 16px 18px;  /* less padding */
+  border-radius: 10px;
+}
+
+.ingredients.box, .instructions.box {
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  padding: 12px;        /* reduced padding */
+  background-color: #4f0000;
+}
+
+.ingredients h3, .instructions h3 {
+  margin-bottom: 8px;   /* smaller margin */
+  border-bottom: 2px solid #eee;
+  padding-bottom: 4px;
+  line-height: 1.1;
+}
+
+.ingredients ul, .instructions ol {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.15;
+}
+
+.time-info.bottom-time {
+  font-weight: bold;
+  display: flex;
+  gap: 25px;            /* slightly smaller gap */
+  padding-top: 8px;     /* reduced padding */
+  border-top: 1px solid #ddd;
+  justify-content: flex-start;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Responsive stacking */
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .card-left, .card-right {
+    flex: none;
+    width: 100%;
+  }
+
+  .card-left img {
+    max-width: 100%;
+    max-height: none;
+  }
+}
+
+.card-right {
+  position: relative; /* Needed so .button is positioned inside this div */
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 18px;
+  background: #fff;
+  border-radius: 10px;
+  color: #000;
+}
+
+.button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btn {
+  background: none;      /* No background */
+  border: none;          /* No border */
+  color: black;          /* Black icon */
+  font-size: 1.5rem;     /* Bigger size */
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.btn:hover {
+  color: #333; /* Slight hover effect */
+}

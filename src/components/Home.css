@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+.main {
+    width: 100%;
+    height: 600px;
+    background-color:rgb(221, 220, 219);
+    background-size: cover;
+    position: relative;
+     max-width: 100%;
+     margin-top: 1px;
+}
+.slogan{
+    font-size: 50px;
+    right: 90px;
+    bottom: 220px;
+    position: absolute;
+  color: aliceblue;
+  font-family:'Raleway', sans-serif;;
+}
+
+.slogan span{
+    color: rgb(182, 22, 22);
+    font-weight: bold;
+}

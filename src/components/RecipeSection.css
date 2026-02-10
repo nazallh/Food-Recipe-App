@@ -1,0 +1,85 @@
+.recipe-section {
+  padding: 60px 20px;
+  background-color: #fdf8f2;
+  text-align: center;
+}
+
+.recipe-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* More cards per row */
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  max-height: 600px;    /* Approx height for two rows */
+  overflow-y: auto;     /* Scroll if more cards */
+  justify-content: center;
+}
+
+.recipe-card {
+  background: white;
+  padding: 12px;        /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: left;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.recipe-card img {
+  height: 140px;        /* Fixed image height */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.recipe-card h3 {
+  font-size: 1rem;      /* Smaller title */
+  margin: 8px 0;
+  line-height: 1.2;
+}
+
+.recipe-card a {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #d60000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.recipe-card a:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* Responsive: single column on small screens */
+@media (max-width: 600px) {
+  .recipe-grid {
+    grid-template-columns: 1fr;
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+.chef-choice-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.chef-choice-header .center-image {
+  height: 100px; /* adjust size as needed */
+  width: 250px;
+}

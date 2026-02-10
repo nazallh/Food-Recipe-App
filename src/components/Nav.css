@@ -1,0 +1,80 @@
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(95, 1, 1);
+    display: flex;
+    color: rgb(251, 0, 0);
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 30px 30px 30px rgba(207, 4, 4, 0.1);
+}
+
+
+.logo img {
+    height: 70px;
+    width: 250px;
+    margin-left: 5px;
+}
+
+.list {
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.list ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.list ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+.list ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* DROPDOWN STYLES */
+.dropdown {
+    position: relative;
+}
+
+.dropMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #444;
+    z-index: 1000;
+    min-width: 150px;
+    flex-direction: column;
+    padding: 0;
+}
+
+.dropMenu li {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.dropMenu li a {
+    color: white;
+}
+
+/* Hover rule to show dropdown */
+.dropdown:hover .dropMenu {
+    display: flex;
+
+}
